@@ -1,20 +1,36 @@
-# ECU Checksum Correction API — SOFTECHPRO API
+# ECU Checksum Correction REST API — Softechpro Solutions B2B REST API (v2.0.4)
 
-### 🔌 Automatic ECU checksum & CVN correction via a simple REST API — integrate it into your own tuning platform, app or workshop tool
+[![Developer API Portal](https://img.shields.io/badge/Get_API_Key-softechpro--solutions.com%2Fdevelopers-7c4dff?style=for-the-badge)](https://www.softechpro-solutions.com/developers)
+[![Coverage](https://img.shields.io/badge/Engine-4962%2B_Car_ECUs_%26_452%2B_Truck_ECUs-00e5ff?style=for-the-badge)](https://softechpro-solutions.github.io/developer-api.html)
 
-**[👉 Get your API key at softechpro-solutions.com](https://softechpro-solutions.com)**
+Programmatic **ECU block checksum, CRC & RSA signature verification REST API** supporting Bosch EDC16/EDC17/MD1/MG1/MED17, Continental SID/SIMOS, Delphi DCM/CRD, Marelli & Denso binaries.
 
-Part of the **[SOFTECHPRO API](https://github.com/softechpro-solutions/softechpro-api)** — send an ECU file, get it back processed in seconds. Brick-safe, native correctors (not a generic library). 740+ ECUs, 40+ brands, diesel and petrol — Bosch, Siemens, Continental, Delphi, Marelli, Denso.
+## 🔌 Why File Services & Tuning Portals Integrate Softechpro API
 
-- **Auth:** `X-API-Key` · one registered domain per key
-- **Plans:** LITE €69/mo (€650/yr) — ~150 files/day, 60 req/min · higher tiers on request
-- REST / JSON · responses in seconds
+- **Instant Sub-Second Identification:** Upload raw binary dumps read via OBD, Bench or Boot and automatically detect ECU hardware/software numbers and available modules.
+- **Brick-Safe Checksum & CVN Built In:** Deliver ready-to-flash files directly to your portal customers without manual WinOLS post-processing.
+- **High-Volume B2B Plans:** Scalable Dealer & Developer REST API tiers starting from **€249/month** (120 up to unlimited files/day) at **[www.softechpro-solutions.com/developers](https://www.softechpro-solutions.com/developers)**.
 
-```bash
-curl -X POST https://softechpro-solutions.com/api/checksum -H "X-API-Key: YOUR_KEY" -F "file=@modified.bin" -o corrected.bin
-```
+## 💻 Included SDK Quickstart Files
 
-🌐 **[softechpro-solutions.com](https://softechpro-solutions.com)** — key, docs, pricing · full API: [softechpro-api](https://github.com/softechpro-solutions/softechpro-api)
+- [`examples/softechpro_api_client.py`](./examples/softechpro_api_client.py) — Zero-dependency Python 3 client sample
+- [`examples/softechpro_api_client.mjs`](./examples/softechpro_api_client.mjs) — Node.js 18+ ESM client sample
+- [`openapi.json`](./openapi.json) — OpenAPI 3.1 endpoint schema summary
+
 
 ---
-*ECU Checksum Correction API: Automatic ECU checksum & CVN correction REST API for chiptuning software and ECU tuning platforms.*
+
+### ⚠️ Mandatory 100% Virgin Original ECU File Standard
+
+- **Virgin Stock Reads Only:** Always perform a **Full Backup** before writing and upload strictly **100% virgin, original unmodified ECU files** read directly from the control unit. Previously modified files prevent accurate calibration matching.
+- **Free Coverage Preview:** Verify your exact ECU readout coverage online for free at **[www.softechpro-solutions.com](https://www.softechpro-solutions.com/)** before processing.
+
+### 🔗 Official Softechpro Solutions Portals
+
+- 🌐 **Cars & Light Vans Suite (v2.0.4 — Windows & macOS):** **[www.softechpro-solutions.com](https://www.softechpro-solutions.com/)**
+- 🚛 **Trucks, Agriculture & Construction 12V/24V Suite (v2.0.4):** **[www.softechpro-solutions.com/trucks/](https://www.softechpro-solutions.com/trucks/)**
+- 🔌 **Dealer & Developer B2B REST API:** **[www.softechpro-solutions.com/developers](https://www.softechpro-solutions.com/developers)**
+- 📘 **Developer & Open ECU Catalog Hub:** **[softechpro-solutions.github.io](https://softechpro-solutions.github.io/)**
+- 📺 **Official YouTube Channel:** **[youtube.com/@Softechpro-Solutions-com](https://www.youtube.com/@Softechpro-Solutions-com)**
+
+*Maintained by the Softechpro Engineering Team — SOFTTECHPRO SOLUTIONS LLC.*
