@@ -1,9 +1,8 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Softechpro Solutions — ECU Checksum Correction REST API",
-    "version": "2.0.4",
-    "description": "Programmatic **ECU block checksum, CRC & RSA signature verification REST API** supporting Bosch EDC16/EDC17/MD1/MG1/MED17, Continental SID/SIMOS, Delphi DCM/CRD, Marelli & Denso binaries. Official B2B API keys & plans at https://www.softechpro-solutions.com/developers"
+    "title": "Automated ECU Checksum Correction B2B REST API",
+    "version": "2.0.4"
   },
   "servers": [
     {
@@ -13,17 +12,7 @@
   "paths": {
     "/api/coverage-public": {
       "get": {
-        "summary": "Retrieve live supported ECU brands, models and solution counts"
-      }
-    },
-    "/api/v1/analyze": {
-      "post": {
-        "summary": "Upload virgin original ECU binary to list available automated modules & checksum family"
-      }
-    },
-    "/api/v1/process": {
-      "post": {
-        "summary": "Apply selected calibration modules (DPF, EGR, AdBlue, DTC, Stage 1) with automatic checksum & CVN correction"
+        "summary": "Live ECU catalog"
       }
     }
   }
